@@ -30,7 +30,17 @@ WHERE id IN (
   FROM pedidos 
   WHERE STRFTIME('%m', data_hora) = '01');
 
+--Buscando informações da tabela de produtos
 
+--Média de preço:
 
+  SELECT AVG(preco) from produtos;
 
+--Identificando os produtos que possuem o preço maior do que a média de preços:
 
+  SELECT nome, preco
+  from produtos
+  GROUP by nome, preco
+  HAVING preco > (
+    SELECT AVG(preco) 
+    from produtos);
