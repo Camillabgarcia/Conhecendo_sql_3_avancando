@@ -1,6 +1,6 @@
 --Elaborando consultas para os gestores do Serenato Café e Bistrô.
 
---Utilizando o INNER JOIN
+--Utilizando o INNER JOIN.
 -- Identificando o nome de cada cliente que realizou os pedidos juntando duas tabelas:
 
 SELECT c.nome, p.id, p.data_hora
@@ -8,7 +8,7 @@ FROM clientes c
 INNER JOIN pedidos p
 on c.id = p.id_cliente;
 
---RIGHT JOIN
+--RIGHT JOIN.
 --Identificando quais produtos foram vendidos ou não no mês de outubro:
 
 
@@ -23,7 +23,7 @@ from
 RIGHT JOIN produtos pr
 on pr.id = x.id_produto;
 
---LEFT JOIN
+--LEFT JOIN.
 --Identificando quais clientes não compraram em outubro, onde isso ajudará os gestores a saber quem são os mais frequentes ou não:
 
 SELECT c.nome, x.id
@@ -36,7 +36,7 @@ LEFT JOIN
 on c.id = x.id_cliente
 WHERE x.id_cliente ISNULL;
 
---FULL JOIN
+--FULL JOIN.
 --Unindo todos os dados das tabelas:
 SELECT c.nome, p.id
 from clientes c

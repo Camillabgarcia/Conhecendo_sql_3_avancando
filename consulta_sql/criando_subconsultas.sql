@@ -1,6 +1,9 @@
+--Elaborando consultas para os gestores do Serenato Café e Bistrô.
+
+
 --Exemplos de subconsultas:
 
---Unindo tabelas com UNION ALL
+--Unindo tabelas com UNION ALL.
 --Objetivo: enviar um brinde para cada pessoa fornecedora e colaboradora de forma surpresa, enviando para o endereço.
 --Ponto de Atenção: dois dos colaboradores residem no mesmo lugar.
 
@@ -30,7 +33,7 @@ WHERE id IN (
   FROM pedidos 
   WHERE STRFTIME('%m', data_hora) = '01');
 
---Buscando informações da tabela de produtos
+--Buscando informações da tabela de produtos.
 
 --Média de preço:
 
