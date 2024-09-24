@@ -1,7 +1,7 @@
 Conhecendo SQL - Parte 3: Curso de
 Realizando consultas com SQL: Joins, Views e transações
 
-Este repositório contém o material e os códigos desenvolvidos durante a terceira parte da Formação de SQL pela plataforma Alura. Nesta etapa, focamos no uso de comandos SQL mais avançados para manipulação e consulta de dados, incluindo JOINs, subconsultas, views, triggers, e transações.
+Este repositório contém o material e os códigos desenvolvidos durante a terceira parte da Formação de Conhecendo SQL pela plataforma Alura. Nesta etapa, focamos no uso de comandos SQL mais avançados para manipulação e consulta de dados, incluindo JOINs, subconsultas, views, triggers, e transações.
 
 Tópicos Abordados
 1. Criação e Inserção de Dados
